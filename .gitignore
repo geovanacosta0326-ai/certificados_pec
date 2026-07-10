@@ -1,0 +1,12 @@
+# Python (só usado no script conversor local)
+__pycache__/
+*.pyc
+
+# Planilhas originais (dados sensíveis, não sobem pro git)
+scripts/planilha_certificados.xlsx
+scripts/trabalhos_agronegocio.xlsx
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store

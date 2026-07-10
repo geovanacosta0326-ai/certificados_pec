@@ -1,0 +1,107 @@
+/* ===========================================================
+   Busca fuzzy 100% no navegador — mesma lógica do certificados_logic.py
+   (compara palavra por palavra e usa o PIOR caso entre elas)
+   =========================================================== */
+
+const LIMIAR_SIMILARIDADE = 75;
+
+function normalizar(texto) {
+  if (!texto) return "";
+  return texto
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "") // remove acentos
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+// Distância de Levenshtein simples
+function distanciaLevenshtein(a, b) {
+  const m = a.length, n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  const linha = new Array(n + 1);
+  for (let j = 0; j <= n; j++) linha[j] = j;
+
+  for (let i = 1; i <= m; i++) {
+    let anterior = linha[0];
+    linha[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const temp = linha[j];
+      if (a[i - 1] === b[j - 1]) {
+        linha[j] = anterior;
+      } else {
+        linha[j] = 1 + Math.min(anterior, linha[j], linha[j - 1]);
+      }
+      anterior = temp;
+    }
+  }
+  return linha[n];
+}
+
+// Similaridade estilo rapidfuzz.ratio (0-100)
+function razaoSimilaridade(a, b) {
+  if (!a.length && !b.length) return 100;
+  const dist = distanciaLevenshtein(a, b);
+  const maxLen = a.length + b.length;
+  return ((maxLen - dist) / maxLen) * 100;
+}
+
+function pontuacaoCorrespondencia(termoTokens, textoCandidato) {
+  const candidatoTokens = normalizar(textoCandidato).split(" ").filter(Boolean);
+  if (!candidatoTokens.length || !termoTokens.length) return 0;
+
+  const pioresCasos = termoTokens.map((termoToken) => {
+    let melhor = 0;
+    for (const candidatoToken of candidatoTokens) {
+      const s = razaoSimilaridade(termoToken, candidatoToken);
+      if (s > melhor) melhor = s;
+    }
+    return melhor;
+  });
+
+  return Math.min(...pioresCasos);
+}
+
+/**
+ * Busca registros cujo(s) nome(s) ou detalhe batam com o termo digitado.
+ * @param {Array} registros - lista de {numero, nomes: [], detalhe}
+ * @param {string} termoBusca
+ * @returns {Array|Object} resultados ordenados ou objeto de erro
+ */
+function buscarRegistros(registros, termoBusca) {
+  const termoTokens = normalizar(termoBusca).split(" ").filter(Boolean);
+  
+  // MENSAGEM EXIGIDA: Digite pelo menos dois nomes para realizar a pesquisa
+  if (termoTokens.length > 0 && termoTokens.length < 2) {
+    return { erro: "min_nomes", mensagem: "Digite pelo menos dois nomes para realizar a pesquisa." };
+  }
+
+  if (termoTokens.length === 0) return [];
+
+  const resultados = [];
+  for (const registro of registros) {
+    const candidatos = [...(registro.nomes || [])];
+    if (!registro.titulo && registro.detalhe) {
+      candidatos.push(registro.detalhe);
+    }
+    let melhorPlacar = 0;
+    for (const candidato of candidatos) {
+      const p = pontuacaoCorrespondencia(termoTokens, candidato);
+      if (p > melhorPlacar) melhorPlacar = p;
+    }
+    if (melhorPlacar >= LIMIAR_SIMILARIDADE) {
+      resultados.push({ ...registro, placar: Math.round(melhorPlacar * 10) / 10 });
+    }
+  }
+
+  resultados.sort((a, b) => b.placar - a.placar);
+  return resultados;
+}
+
+function juntarNomes(nomes) {
+  if (!nomes || !nomes.length) return "";
+  if (nomes.length === 1) return nomes[0];
+  if (nomes.length === 2) return `${nomes[0]} e ${nomes[1]}`;
+  return `${nomes.slice(0, -1).join(", ")} e ${nomes[nomes.length - 1]}`;
+}
