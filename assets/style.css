@@ -45,7 +45,7 @@ body {
 
 /* ---------- Cabeçalho ---------- */
 header.topo {
-  padding: 4.5rem 0 3rem;
+  padding: 5rem 0 3.5rem;
   text-align: center;
 }
 
@@ -74,10 +74,29 @@ header.topo {
 
 h1.titulo {
   font-family: var(--fonte-display);
-  font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
   font-weight: 600;
-  margin: 1rem 0 0.6rem;
-  line-height: 1.15;
+  margin: 1.2rem 0 0.9rem;
+  line-height: 1.12;
+}
+
+h2.subtitulo {
+  font-family: var(--fonte-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--terracota);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+h3.subtitulo {
+  font-family: var(--fonte-texto);
+  font-weight: 500;
+  color: var(--tinta-suave);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .subtitulo {
@@ -90,8 +109,8 @@ h1.titulo {
 .trilhas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 1rem 0 5rem;
+  gap: 1.75rem;
+  padding: 1.5rem 0 5rem;
 }
 
 @media (max-width: 820px) {
@@ -106,16 +125,16 @@ h1.titulo {
   color: inherit;
   background: #FFFDF8;
   border: 1px solid var(--creme-escuro);
-  border-radius: 14px;
-  padding: 2.2rem 1.8rem 1.9rem;
+  border-radius: 16px;
+  padding: 2.4rem 2rem 2.1rem;
   box-shadow: var(--sombra);
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
 .card-trilha:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 36px rgba(31, 61, 43, 0.18);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 42px rgba(31, 61, 43, 0.2);
 }
 
 .card-trilha::before {
@@ -123,40 +142,54 @@ h1.titulo {
   position: absolute;
   inset: 0;
   border-top: 4px solid var(--cor);
-  border-radius: 14px 14px 0 0;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-trilha::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--cor);
+  opacity: 0.06;
+  pointer-events: none;
 }
 
 .selo {
-  width: 54px;
-  height: 54px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  background: color-mix(in srgb, var(--cor) 10%, transparent);
   border: 2px solid var(--cor);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--cor);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
   transition: transform 0.35s ease;
 }
 
 .card-trilha:hover .selo {
-  transform: rotate(-8deg) scale(1.05);
+  transform: rotate(-8deg) scale(1.06);
 }
 
-.selo svg { width: 26px; height: 26px; }
+.selo svg { width: 28px; height: 28px; }
 
 .card-trilha h2 {
   font-family: var(--fonte-display);
-  font-size: 1.35rem;
-  margin: 0 0 0.5rem;
+  font-size: 1.45rem;
+  margin: 0 0 0.6rem;
   color: var(--cor);
 }
 
 .card-trilha p {
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   color: var(--tinta-suave);
-  line-height: 1.5;
-  margin: 0 0 1.3rem;
+  line-height: 1.55;
+  margin: 0 0 1.4rem;
 }
 
 .ir-para {
@@ -166,6 +199,13 @@ h1.titulo {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.card-trilha:hover .ir-para {
+  border-color: var(--cor);
 }
 
 .ir-para svg {

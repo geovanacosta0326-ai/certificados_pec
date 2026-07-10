@@ -3,7 +3,7 @@
    (compara palavra por palavra e usa o PIOR caso entre elas)
    =========================================================== */
 
-const LIMIAR_SIMILARIDADE = 75;
+const LIMIAR_SIMILARIDADE = 85;
 
 function normalizar(texto) {
   if (!texto) return "";
@@ -54,6 +54,10 @@ function pontuacaoCorrespondencia(termoTokens, textoCandidato) {
   const pioresCasos = termoTokens.map((termoToken) => {
     let melhor = 0;
     for (const candidatoToken of candidatoTokens) {
+      // Evita que palavras diferentes com terminação parecida (ex: "participação"
+      // x "classificação") sejam confundidas com erro de digitação: exige que
+      // comecem com a mesma letra, já que typos raramente mudam o início da palavra.
+      if (termoToken[0] !== candidatoToken[0]) continue;
       const s = razaoSimilaridade(termoToken, candidatoToken);
       if (s > melhor) melhor = s;
     }
@@ -82,7 +86,9 @@ function buscarRegistros(registros, termoBusca) {
   const resultados = [];
   for (const registro of registros) {
     const candidatos = [...(registro.nomes || [])];
-    if (!registro.titulo && registro.detalhe) {
+    if (registro.titulo) {
+      candidatos.push(registro.titulo);
+    } else if (registro.detalhe) {
       candidatos.push(registro.detalhe);
     }
     let melhorPlacar = 0;
