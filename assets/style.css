@@ -1,0 +1,365 @@
+/* ===========================================================
+   Congresso Brasileiro de Agronegócio — Emissão de Certificados
+   Paleta: creme (papel), verde-escuro (tinta), dourado (selo)
+   + cores de destaque por trilha (participantes / avaliadores / missão rosa)
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --creme: #EAF1E6;
+  --creme-escuro: #D9E6D2;
+  --tinta: #1F3D2B;
+  --tinta-suave: #2E4F3A;
+  --dourado: #C99A3E;
+  --dourado-claro: #E4C87A;
+  --terracota: #A85C32;
+
+  --cor-participantes: #15572C;
+  --cor-avaliadores: #1B3A4B;
+  --cor-missao-rosa: #8C2F4B;
+
+  --fonte-display: 'Playfair Display', Georgia, serif;
+  --fonte-texto: 'Inter', system-ui, sans-serif;
+
+  --sombra: 0 10px 30px rgba(31, 61, 43, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(201, 154, 62, 0.07), transparent 40%),
+    radial-gradient(circle at 85% 90%, rgba(31, 61, 43, 0.06), transparent 45%);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Cabeçalho ---------- */
+header.topo {
+  padding: 1.5rem 0 1.75rem;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--dourado);
+  display: inline-block;
+  padding-bottom: 0.9rem;
+  position: relative;
+}
+
+.eyebrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 2px;
+  background: var(--dourado);
+}
+
+h1.titulo {
+  font-family: var(--fonte-display);
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  font-weight: 600;
+  color: #15572C;
+  margin: 0.7rem 0 0.5rem;
+  line-height: 1.1;
+}
+
+h2.subtitulo {
+  font-family: var(--fonte-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--terracota);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+h3.subtitulo {
+  font-family: var(--fonte-texto);
+  font-weight: 500;
+  color: var(--tinta-suave);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.subtitulo {
+  color: var(--tinta-suave);
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+/* ---------- Cards das trilhas ---------- */
+.trilhas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+@media (max-width: 820px) {
+  .trilhas { grid-template-columns: 1fr; }
+}
+
+.card-trilha {
+  --cor: var(--cor-participantes);
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #FFFDF8;
+  border: 1px solid var(--creme-escuro);
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem 1.3rem;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.card-trilha:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 42px rgba(31, 61, 43, 0.2);
+}
+
+.card-trilha::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 4px solid var(--cor);
+  border-radius: 16px 16px 0 0;
+}
+
+.card-trilha::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--cor);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.selo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cor);
+  border: 2px solid var(--cor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 0.9rem;
+  transition: transform 0.35s ease;
+}
+
+.card-trilha:hover .selo {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+.selo svg { width: 20px; height: 20px; }
+
+.card-trilha h2 {
+  font-family: var(--fonte-display);
+  font-size: 1.25rem;
+  margin: 0 0 0.4rem;
+  color: var(--cor);
+}
+
+.card-trilha p {
+  font-size: 0.88rem;
+  color: var(--tinta-suave);
+  line-height: 1.45;
+  margin: 0 0 1rem;
+}
+
+.ir-para {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cor);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.card-trilha:hover .ir-para {
+  border-color: var(--cor);
+}
+
+.ir-para svg {
+  width: 14px; height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.card-trilha:hover .ir-para svg { transform: translateX(4px); }
+
+footer.rodape {
+  text-align: center;
+  padding: 0.5rem 0 2rem;
+  color: var(--tinta-suave);
+  font-size: 0.82rem;
+}
+
+/* ===========================================================
+   Página de busca
+   =========================================================== */
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--tinta-suave);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+.voltar svg { width: 14px; height: 14px; }
+
+.faixa-trilha {
+  padding: 3rem 0 1.5rem;
+}
+
+.faixa-trilha .eyebrow { color: var(--cor, var(--dourado)); }
+.faixa-trilha .eyebrow::after { background: var(--cor, var(--dourado)); }
+
+.busca-caixa {
+  background: #FFFDF8;
+  border: 1px solid var(--creme-escuro);
+  border-radius: 14px;
+  padding: 1.6rem;
+  box-shadow: var(--sombra);
+  margin-bottom: 2rem;
+}
+
+.busca-caixa input[type="text"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: var(--fonte-texto);
+  border: 1.5px solid var(--creme-escuro);
+  border-radius: 8px;
+  background: var(--creme);
+  color: var(--tinta);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.busca-caixa input[type="text"]:focus {
+  border-color: var(--cor, var(--dourado));
+}
+
+.busca-caixa select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  font-family: var(--fonte-texto);
+  border: 1.5px solid var(--creme-escuro);
+  border-radius: 8px;
+  background: var(--creme);
+  color: var(--tinta);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.busca-caixa select:focus {
+  border-color: var(--cor, var(--dourado));
+}
+
+.dica {
+  font-size: 0.8rem;
+  color: var(--tinta-suave);
+  margin-top: 0.6rem;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 4rem;
+}
+
+.resultado-item {
+  background: #FFFDF8;
+  border: 1px solid var(--creme-escuro);
+  border-left: 4px solid var(--cor, var(--dourado));
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.resultado-item .nomes {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.resultado-item .detalhe {
+  font-size: 0.85rem;
+  color: var(--tinta-suave);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+.botao-baixar {
+  background: var(--cor, var(--tinta));
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: filter 0.2s ease;
+}
+.botao-baixar:hover { filter: brightness(1.1); }
+.botao-baixar:disabled { opacity: 0.6; cursor: wait; }
+
+.mensagem-vazia {
+  text-align: center;
+  color: var(--tinta-suave);
+  padding: 2.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.mensagem-erro {
+  text-align: center;
+  color: var(--terracota);
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-trilha, .card-trilha .selo, .card-trilha .ir-para svg, .botao-baixar {
+    transition: none !important;
+  }
+}
