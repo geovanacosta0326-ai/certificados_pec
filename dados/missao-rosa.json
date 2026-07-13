@@ -1,0 +1,608 @@
+[
+  {
+    "numero": 1,
+    "nomes": [
+      "Sávio Barbosa Souza",
+      "José Ianky Costa Pereira",
+      "Juliana Isis Araújo Pereira",
+      "Margarida Maria Monteiro Vasconcelos",
+      "Maria Vitória Souza Dos Reis Amaral"
+    ],
+    "titulo": "AVALIAÇÃO SENSORIAL DE BEBIDA LÁCTEA A BASE DE CARRAGENANA EM FUNÇÃO DOS TRATAMENTOS DE EXTRAÇÃO",
+    "segmento": "Agroindústria",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 2,
+    "nomes": [
+      "Maria Matilde Bezerra Carvalho",
+      "Antonio Vitor Machado",
+      "Anny Karolyne Silva Moura",
+      "Wiglainy Samidra D. Fonseca"
+    ],
+    "titulo": "CARACTERIZAÇÃO FÍSICO-QUÍMICA E POTENCIAL NUTRICIONAL DA FARINHA DAS SEMENTES DE MUNGUBA (PACHIRA AQUATICA AUBL.) PRODUZIDA NO SEMIÁRIDO POTIGUAR",
+    "segmento": "Agroindústria",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 3,
+    "nomes": [
+      "Mariana Ribeiro Da Silva",
+      "Eric Barbosa Lima",
+      "Otília Mônica Alves Borges"
+    ],
+    "titulo": "DESENVOLVIMENTO DE BISCOITOS ARTESANAIS DE CASTANHA DE CAJU E MEL DE ABELHAS NATIVAS: APROVEITAMENTO INTEGRAL E VALORIZAÇÃO DA AGRICULTURA FAMILIAR.",
+    "segmento": "Agroindústria",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 4,
+    "nomes": [
+      "Aglair Alves Dos Santos",
+      "Sara Oliveira Brito",
+      "David Rodrigues Da Silva",
+      "Keline Sousa Albuquerque Uchôa",
+      "Cleilson Do Nascimento Uchôa"
+    ],
+    "titulo": "A IMPLANTAÇÃO DE UM MELIPONÁRIO ESCOLA EM PROL DA SOBREVIVÊNCIA DAS ABELHAS NATIVAS, ATUANDO NO COMBATE DAS AÇÕES HUMANAS.",
+    "segmento": "Apicultura/ Meliponicultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 5,
+    "nomes": [
+      "Aisha Silveira Holanda Gomes",
+      "Eva Monica Sarmento Da Silva",
+      "Breno Magalhães Freitas",
+      "Isac Gabriel Abrahão Bomfim",
+      "Tânia Maria Sarmento Da Silva"
+    ],
+    "titulo": "ALIMENTAÇÃO ARTIFICIAL COMO ESTRATÉGIA PARA MELHORIA DE COLÔNIAS DE ABELHA JANDAÍRA (MELIPONA SUBNITIDA) NO CEARÁ.",
+    "segmento": "Apicultura/ Meliponicultura",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 6,
+    "nomes": [
+      "Kamila De Lima Barbosa",
+      "Kaliana Sitonio Eça",
+      "Raquel Guimarães Benevides",
+      "Lais Oliveira Leite"
+    ],
+    "titulo": "AVALIAÇÃO FÍSICO-QUÍMICA E ESTABILIDADE ANTIOXIDANTE DE EXTRATOS ALCOÓLICOS DE PRÓPOLIS VERDE E VERMELHA BRASILEIRAS",
+    "segmento": "Apicultura/ Meliponicultura",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 7,
+    "nomes": [
+      "Júlia Da Paz Mamede",
+      "Isaac De Lima Cavalcante",
+      "Isabela Ferreira Sampaio",
+      "Ariel Falanga De Oliveira",
+      "Carminda Sandra Brito Salmito-Vanderley"
+    ],
+    "titulo": "DEFESO PESQUEIRO NA REGIÃO NORDESTE COMO ESTRATÉGIA DE SUSTENTABILIDADE AMBIENTAL",
+    "segmento": "Aquicultura e Pesca",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 8,
+    "nomes": [
+      "Francisco Lucas Alves Batista",
+      "Israel Cavalcante Do Nascimento Moreira",
+      "Ruan Cavalcante Lins Mororó",
+      "Géssica Dos Santos Araújo",
+      "Francisco Ernani Alves Magalhães"
+    ],
+    "titulo": "ZEBRAFISH (D. RERIO) ADULTO: MODELO ANIMAL PARA AVALIAR O POSSÍVEL EFEITO ANSIOLÍTICO DOS GALHOS DO CARDO-SANTO (ARGEMONE MEXICANA L.)",
+    "segmento": "Aquicultura e Pesca",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 9,
+    "nomes": [
+      "Tarcisio Baia Neto",
+      "Dimitri Feitosa Peixoto",
+      "Geovana Sales Vieira",
+      "Francisco Esmaile de Sales Lima",
+      "Francisco Lucas Alves Batista"
+    ],
+    "titulo": "ZEBRFISH (DANIO RERIO) ADULTO: MODELO ANIMAL BIOINDICADOR DE TOXICIDADE DAS VAGENS DO CARDO-SANTO (ARGEMONE MEXICANA L.)",
+    "segmento": "Aquicultura e Pesca",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 10,
+    "nomes": [
+      "Antonia Dayany Gomes Da Silva",
+      "Cláudia Goulart De Abreu",
+      "Silvana Cavalcante Bastos Leite",
+      "Francisco Ilário Da Silva Abreu",
+      "Otávio Costa De Sousa"
+    ],
+    "titulo": "ANÁLISE COMPARATIVA DAS LINHAGENS NOVOGEN BROWN E NOVOGEN BLUE EM SISTEMA CAIPIRA: FASE INICIAL",
+    "segmento": "Avicultura Caipira",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 11,
+    "nomes": [
+      "Ailton Dias Ferreira",
+      "Rita Ingrid Sousa Fernandes",
+      "Antonia Dayany Gomes Da Silva",
+      "Josefa Dêis Brito Silva",
+      "Raquel Oliveira Dos Santos Fontenelle"
+    ],
+    "titulo": "AVALIAÇÃO MICROBIOLÓGICA DA ÁGUA E DE SUPERFÍCIES DE PROPRIEDADES DE PEQUENOS PRODUTORES DE OVOS NO MUNICÍPIO DE SANTANA DO ACARAÚ, CEARÁ",
+    "segmento": "Avicultura Caipira",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 12,
+    "nomes": [
+      "Witalo Mesquita Xerez",
+      "Antonia Dayany Gomes Da Silva",
+      "Adriana Pereira Ribeiro",
+      "Francisca Sabrina Xavier De Araújo",
+      "Cláudia Goulart De Abreu"
+    ],
+    "titulo": "PROJEÇÃO DE VIABILIDADE ECONÔMICA DA CRIAÇÃO DE CODORNAS EM DOIS SISTEMAS DE AVIÁRIO COM FINANCIAMENTO PRONAF",
+    "segmento": "Avicultura Caipira",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 13,
+    "nomes": [
+      "Débora Lana De Souza Lopes",
+      "Maria Arianna Rodrigues Fedeli",
+      "Priscila De Vasconcelos Boa Ventura",
+      "Victor Alves Carneiro",
+      "Andrey Carvalho Chaves"
+    ],
+    "titulo": "AVALIAÇÃO DO EFEITO COMBINATÓRIO DO CARVACROL ASSOCIADO À CIPROFLOXACINA FRENTE A CEPAS DE PROTEUS MIRABILIS PROVENIENTES DE GRANJAS AVÍCOLAS",
+    "segmento": "Avicultura Industrial",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 14,
+    "nomes": [
+      "Maria Arianna Rodrigues Fedeli",
+      "Débora Lana De Souza Lopes",
+      "Priscila De Vasconcelos Boa Ventura",
+      "Victor Alves Carneiro",
+      "Andrey Carvalho Chaves"
+    ],
+    "titulo": "AVALIAÇÃO DO EFEITO COMBINATÓRIO DO CARVACROL ASSOCIADO À CIPROFLOXACINA FRENTE A KLEBSIELLA PNEUMONIAE MULTIRRESISTENTES ISOLADAS DE FEZES DE FRANGO.",
+    "segmento": "Avicultura Industrial",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 15,
+    "nomes": [
+      "Isabelle Matos Bastos",
+      "Julia Maria Gomes Da Costa",
+      "Jéssica Almeida Arrais",
+      "Vitória Cavalcante Dos Santos",
+      "Walbens Siqueira Benevides"
+    ],
+    "titulo": "EFEITO DE FITOTERÁPICO A BASE DE ÓLEOS ESSENCIAIS NA PRODUTIVIDADE E RESPOSTA À VACINA DE FRANGOS DE CORTE SOBRE VARIADOS DESAFIOS RESPIRATÓRIOS",
+    "segmento": "Avicultura Industrial",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 16,
+    "nomes": [
+      "Iury Aparecido Lima De Freitas",
+      "Mayla Stefanne Santos Magalhães",
+      "Tatiana Didier Alencar",
+      "Lucas Rodrigues De Souza",
+      "César Erineudo Tavares De Araújo"
+    ],
+    "titulo": "ACTINOMICOSE CRANIOFACIAL EM BOVINOS NO CARIRI CEARENSE: ACHADOS CLÍNICOS E RADIOGRÁFICOS COMPATÍVEIS E IMPLICAÇÕES EPIDEMIOLÓGICAS NA PRODUÇÃO ANIMAL",
+    "segmento": "Bovinocultura de Corte",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 17,
+    "nomes": [
+      "Feliph Gonçalves Costa",
+      "Cícero Wanderlô Casimiro Bezerra",
+      "Isis Daniele Dos Santos Rocha",
+      "Melissa Sousa Nogueira",
+      "Marcelo Henrique Gomes Lima"
+    ],
+    "titulo": "LEUCOSE ENZOÓTICA BOVINA COM ENVOLVIMENTO ADRENAL EM BOVINO",
+    "segmento": "Bovinocultura de Corte",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 18,
+    "nomes": [
+      "Alicia Barbosa Frazao",
+      "Alfredo José Herrera Conde",
+      "Carlos Eduardo Martins Ricarte",
+      "Rebeca Brasil Ribeiro",
+      "Paulo Vitor Spessirits Cardoso"
+    ],
+    "titulo": "NUTRIÇÃO DE PRECISÃO EM BOVINOS: O PAPEL DO BALANCEAMENTO DE AMINOÁCIDOS NA REDUÇÃO DE CUSTOS E MELHORIA DO DESEMPENHO.",
+    "segmento": "Bovinocultura de Corte",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 19,
+    "nomes": [
+      "Maria Eduarda Silva Lira De Sousa",
+      "Ricardo José Eleutério Carvalho Filho",
+      "Maria Juliana Moraes Damasceno",
+      "José Janieliano Sousa Mota",
+      "Emmanuelle Lima De Figueirêdo"
+    ],
+    "titulo": "INTERVENÇÃO CIRÚRGICA E MANEJO PÓS OPERATÓRIO NA RECUPERAÇÃO FUNCIONAL DE BEZERRA COM ARTROGRIPOSE CONGÊNITA EM UMIRIM - CE",
+    "segmento": "Bovinocultura de Leite",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 20,
+    "nomes": [
+      "Karen Braz Lima De Paulo",
+      "Ana Beatriz Do Nascimento Taveira Silva",
+      "Maria Yolanda Sousa Noronha",
+      "Carlos Donato Barbosa Alves Júnior"
+    ],
+    "titulo": "MANEJO DE CRIA E RECRIA DE BOVINOS LEITEIROS: QUAIS OS SEUS DESAFIOS?",
+    "segmento": "Bovinocultura de Leite",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 21,
+    "nomes": [
+      "Bárbarah Severo Nojosa",
+      "Alana Mayara Araújo Amâncio",
+      "Letícia Affonso Costa",
+      "Isabella Paulino Dias Da Silva",
+      "Daniel Pessoa Gomes Da Silva"
+    ],
+    "titulo": "MAPEAMENTO DE PONTOS CRÍTICOS DE CONTROLE NA FASE DE ALEITAMENTO: UM OLHAR PARA A SAÚDE DE BEZERRAS LEITEIRAS",
+    "segmento": "Bovinocultura de Leite",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 22,
+    "nomes": [
+      "Ana Gabriela Pires Brasil",
+      "Isabella Pinheiro Ribeiro",
+      "César Carneiro Linhares Fernandes",
+      "Bárbara Mara Bandeira Santos De Oliveira",
+      "Elias Eldo Sá Cavalcante Júnior"
+    ],
+    "titulo": "MASTITE SUBCLÍNICA EM VACAS LEITEIRAS: UMA REVISÃO SOBRE DIAGNÓSTICOS E PREVENÇÃO.",
+    "segmento": "Bovinocultura de Leite",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 23,
+    "nomes": [
+      "Paloma Sobreira De Souza",
+      "Róbio Vieira Da Silva",
+      "Vicencia Leticia Albino Pereira",
+      "Maria Ines Rodrigues Machado",
+      "Julya Davylla Dias Andreade"
+    ],
+    "titulo": "AVALIAÇÃO DAS PROPRIEDADES TECNOLÓGICAS VISANDO AGREGAÇÃO DE VALOR À FARINHA DO PEDÚNCULO DE CAJU (ANACARDIUM OCCIDENTALE L.).",
+    "segmento": "Cajucultura",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 24,
+    "nomes": [
+      "Wiglainy Samidra D. Fonseca",
+      "Maria Matilde Bezerra Carvalho",
+      "Antonio Vitor Machado",
+      "Anny Karolyne Silva Moura"
+      
+    ],
+    "titulo": "POTENCIAL BIOTECNOLÓGICO DO PEDÚNCULO DO CAJU NA PRODUÇÃO DE EXTRATOS ANTIBACTERIANO",
+    "segmento": "Cajucultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 25,
+    "nomes": [
+      "Lívia Cristina Barroso Trindade",
+      "César Carneiro Linhares Fernandes",
+      "Fernando Felipe Da Silva Pereira",
+      "Alfredo José Herrera Conde",
+      "Iago Honorio Silva"
+    ],
+    "titulo": "ELABORAÇÃO DE PRESUNTO CURADO DE CORDEIRO SANTA INÊS COMO ALTERNATIVA TECNOLÓGICA PARA DIVERSIFICAÇÃO E AGREGAÇÃO DE VALOR NA OVINOCULTURA",
+    "segmento": "Caprinovinocultura",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 26,
+    "nomes": [
+      "Mateus Rodrigues Oliveira",
+      "Luiz Alzenor Vitor Batista De Souza Silva",
+      "Bárbara Pinheiro De Sousa",
+      "Natália Ingrid Souto Da Silva"
+    ],
+    "titulo": "EXTRATO DE PRÓPOLIS VERDE DE MIMOSA TENUIFLORA OU SALINOMICINA SOBRE O CONSUMO DE NUTRIENTES POR OVINOS RECEBENDO DIETAS DE ALTO CONCENTRADO",
+    "segmento": "Caprinovinocultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 27,
+    "nomes": [
+      "William De Castro Silva",
+      "Sheila Scantamburlo",
+      "Juliana Costa",
+      "Mirelio Ferreira Da Silva",
+      "Fábio Teles  Santana"
+    ],
+    "titulo": "MANEJO INTEGRADO: SAÚDE E NUTRIÇÃO DE MATRIZES OVINAS EM GESTAÇÃO E LACTAÇÃO EM PEQUENA PROPRIEDADE NA CIDADE DE ITAIÇABA-CE",
+    "segmento": "Caprinovinocultura",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 28,
+    "nomes": [
+      "Ana Giulia Alves Barbosa",
+      "Josué Inácio Matos Lima",
+      "Blenda Vitoria De Carvalho Portela",
+      "Francisco Anderson Fernandes Santos",
+      "Jefferson Da Silva Ferreira"
+    ],
+    "titulo": "ACHADOS HISTOPATOLÓGICOS DE PITIOSE EQUINA LARÍNGEA DIAGNOSTICADA NO CEARÁ.",
+    "segmento": "Equinocultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 29,
+    "nomes": [
+      "Maria Eduarda Neves Pinheiro"
+    ],
+    "titulo": "LACERAÇÃO COM EXPOSIÇÃO ÓSSEA E PRESENÇA DE MIÍASE EM EQUINO: ABORDAGEM TERAPÊUTICA E EVOLUÇÃO CLÍNICA – RELATO DE CASO",
+    "segmento": "Equinocultura",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 30,
+    "nomes": [
+      "Micaelly Alves Carlos",
+      "Gabrielly Queiros Costa Duarte",
+      "Giovana Virgínia Borges Modesto",
+      "César Erineudo Tavares De Araújo",
+      "Isabelle Rodrigues Taveira"
+    ],
+    "titulo": "LESÃO PERFURANTE SUPERFICIAL MUSCULAR EM POTRO QUARTO DE MILHA: RELATO DE CASO",
+    "segmento": "Equinocultura",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 31,
+    "nomes": [
+      "David Rodrigues Da Silva",
+      "Aglair Alves Dos Santos",
+      "Cleilson Do Nascimento Uchôa",
+      "Ivana Cristina Nunes Gadelha Lelis",
+      "Keline Sousa Albuquerque Uchôa"
+    ],
+    "titulo": "AVALIAÇÃO DA ACEITAÇÃO DE PLANTAS DANINHAS COM POTENCIAL ORNAMENTAL PELO PÚBLICO",
+    "segmento": "Floricultura e Paisagismo",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 32,
+    "nomes": [
+      "Aliciane Romeu De Sousa",
+      "Francisco Glerssiano Dos Santos",
+      "Ana Karoline Bento Maia",
+      "Geane Lourenço Bispo",
+      "Cláudia Araújo Marco"
+    ],
+    "titulo": "REVERSÃO À COR VERDE EM MANJERICÃO ROXO: RELAÇÃO COM ANTOCIANINAS E NITROGÊNIO",
+    "segmento": "Floricultura e Paisagismo",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 33,
+    "nomes": [
+      "Rafael Lima Alves",
+      "Ingrid Soledade Jeronimo De Araujo",
+      "Débora Nobre Silva",
+      "Luis Gonzaga Pinheiro Neto",
+      "Francisco José Carvalho Moreira"
+    ],
+    "titulo": "DANOS DE DOENÇAS FITOPATOGÊNICAS SOBRE A MASSA FRESCA DO CAULE E DAS FOLHAS DO TOMATEIRO",
+    "segmento": "Fruticultura",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 34,
+    "nomes": [
+      "Francisco Julian De Sales Nunes",
+      "Gabriela Gonçalves Costa",
+      "Ana Célia Meireles Oliveira",
+      "André Sena Fonsceca",
+      "José Valmir Feitosa"
+    ],
+    "titulo": "DESENVOLVIMENTO DE PITAYA (HYLOCEREUS COSTARICENSIS) SOB ESTRESSE SALINO E PRESENÇA INCIDENTAL DE NEMATOIDES",
+    "segmento": "Fruticultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 35,
+    "nomes": [
+      "Luana Freitas Santiago",
+      "Alessandra Da Silva Chaves",
+      "Pedro Henrique Maia",
+      "Keline Sousa Albuquerque Uchôa",
+      "Cleilson Do Nascimento Uchôa"
+    ],
+    "titulo": "IMPLANTAÇÃO DE ÁREA DE AMORA NA CHAPADA DO APODI",
+    "segmento": "Fruticultura",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 36,
+    "nomes": [
+      "Nadine Albuquerque Pereira",
+      "Ariel Falanga De Oliveira",
+      "Gabriel Martins De Araújo",
+      "Danielle Carvalho Fonseca Falanga",
+      "Keciany Alves De Oliveira"
+    ],
+    "titulo": "AVALIAÇÃO DO EFEITO ANSIOLÍTICO-SÍMILE DO XAROPE DE YACON EM MODELO ANIMAL ZEBRAFISH (DANIO RERIO)",
+    "segmento": "Inovação Tecnológica",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 37,
+    "nomes": [
+      "Levy Belém Marinho",
+      "Maria Clara Cabral Honor Cattaneo",
+      "Carlos Wagner Oliveira",
+      "Ana Célia Meireles Oliveira"
+    ],
+    "titulo": "DESENVOLVIMENTO DE UM PROTÓTIPO AUTOMATIZADO BASEADO NA PLATAFORMA ARDUINO PARA MONITORAMENTO AMBIENTAL EM AVIÁRIOS",
+    "segmento": "Inovação Tecnológica",
+    "colocacao": "2º"
+  },
+  {
+    "numero": 38,
+    "nomes": [
+      "Maria Vitória Souza Dos Reis Amaral",
+      "Sávio Barbosa Souza",
+      "José Ianky Costa Pereira",
+      "Juliana Isis Araújo Pereira",
+      "Margarida Maria Monteiro Vasconcelos"
+    ],
+    "titulo": "EFEITO LARVICIDA DE EXTRATO DE ALGA VERDE SOBRE LARVAS DE AEDES AEGYPTI",
+    "segmento": "Inovação Tecnológica",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 39,
+    "nomes": [
+      "Laís Monteiro Studart",
+      "Pedro Paulino Pinto",
+      "Karen Emanuelly Pinheiro Gomes",
+      "Bruna Farias Brito",
+      "Herlon Victor Rodrigues Silva"
+    ],
+    "titulo": "AVALIAÇÃO MORFOLÓGICA ESPERMÁTICA EM GUAXINIM-MÃO-PELADA (PROCYON CANCRIVORUS): RESULTADOS PRELIMINARES",
+    "segmento": "Meio Ambiente",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 40,
+    "nomes": [
+      "Maycon Martins Da Silva",
+      "Marilha Vieira De Brito",
+      "Darlene Maria Silva",
+      "Ionara Soares De Sousa",
+      "Maria Emilly Do Nascimento Silva"
+    ],
+    "titulo": "RESGATE E IMPLANTAÇÃO DE PLANTAS MEDICINAIS EM ESCOLA DA REGIÃO DE TIANGUÁ, CEARÁ",
+    "segmento": "Meio Ambiente",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 41,
+    "nomes": [
+      "Wesley Leitão De Sousa",
+      "Ana Kelly Barboza Felício",
+      "Ana Karine Justino Da Costa",
+      "Moisés Dias Gomes De Asevedo",
+      "Raimundo Christianey Rios"
+    ],
+    "titulo": "TURISMO SUSTENTÁVEL EM PARACURU-CE: CONTRIBUIÇÕES DO SETOR DE HOSPEDAGEM PARA O DESENVOLVIMENTO ECONÔMICO E AMBIENTAL",
+    "segmento": "Meio Ambiente",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 42,
+    "nomes": [
+      "Flávia Nepomuceno Ribeiro Santiago Coelho",
+      "Letícia Lima Ximenes Aragão",
+      "Karla Raissa Bernardo Souza",
+      "Weibson Paz Pinheiro André",
+      "Adrissy De Almeida Gonçalo"
+    ],
+    "titulo": "AVALIAÇÃO DA RESISTÊNCIA ACARICIDA DE RHIPICEPHALUS SANGUINEUS COLETADOS EM CÃES NA CIDADE DE FORTALEZA-CE",
+    "segmento": "Pets",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 43,
+    "nomes": [
+      "Ana Catarina Ripardo De Oliveira",
+      "Rodrigo Fernando Gomes Olivindo",
+      "Grazyelle Da Silva Collares",
+      "Mariana Fragoso Rentas"
+    ],
+    "titulo": "AVALIAÇÃO DE ESCORE DE CONDIÇÃO CORPORAL (ECC) EM CÃES NA BEIRA-MAR DE FORTALEZA",
+    "segmento": "Pets",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 44,
+    "nomes": [
+      "Júlia Torres Lisboa",
+      "Iane Lara Oliveira De Paulo",
+      "Francisco Eder De Moura Lopes",
+      "Cibelle Mara Pereira De Freitas"
+    ],
+    "titulo": "AVES DE COMPANHIA COMO RESERVATÓRIOS DE PARASITAS: DESAFIOS PARA O BEM-ESTAR ANIMAL E SAÚDE PÚBLICA NO NORDESTE BRASILEIRO",
+    "segmento": "Pets",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 45,
+    "nomes": [
+      "Grazyelle Da Silva Collares",
+      "Rodrigo Fernando Gomes Olivindo",
+      "Mariana Fragoso Rentas",
+      "Vitória Carlos Martins"
+    ],
+    "titulo": "BLITZ PEDIÁTRICA: CONSCIENTIZANDO SOBRE A IMPORTÂNCIA DA VACINAÇÃO DOS PETS",
+    "segmento": "Pets",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 46,
+    "nomes": [
+      "Yasmim Alves De Sousa",
+      "Carlos Kevin Venancio Lima",
+      "Wilgner Henrique Lima Gonçalves",
+      "Lina Raquel Santos Araújo"
+    ],
+    "titulo": "AVALIAÇÃO PRELIMINAR DO NÍVEL DE BIOSSEGURIDADE EM GRANJAS SUINÍCOLAS DA REGIÃO NORDESTE",
+    "segmento": "Suinocultura",
+    "colocacao": "1º"
+  },
+  {
+    "numero": 47,
+    "nomes": [
+      "Yasmin Magalhaes Farias",
+      "Priscila De Vasconcelos Boa Ventura",
+      "Emmanuelle Lima De Figueirêdo",
+      "Iasmin Azevedo Damasceno",
+      "Andrey Carvalho Chaves"
+    ],
+    "titulo": "EFEITOS DO ENRIQUECIMENTO AMBIENTAL NO DESEMPENHO ZOOTÉCNICO E NA QUALIDADE DA CARNE SUÍNA",
+    "segmento": "Suinocultura",
+    "colocacao": "3º"
+  },
+  {
+    "numero": 48,
+    "nomes": [
+      "Isabela Ferreira Sampaio",
+      "Diana Célia Sousa Nunes-Pinheiro"
+    ],
+    "titulo": "TRIQUINELOSE EM JAVALIS (SUS SCROFA): ASPECTOS ZOONÓTICOS E IMPACTOS NA SAÚDE ÚNICA E NA SUINOCULTURA",
+    "segmento": "Suinocultura",
+    "colocacao": "2º"
+  }
+]
