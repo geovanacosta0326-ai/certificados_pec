@@ -74,13 +74,34 @@ function pontuacaoCorrespondencia(termoTokens, textoCandidato) {
  * @returns {Array|Object} resultados ordenados ou objeto de erro
  */
 function buscarRegistros(registros, termoBusca) {
-  const termoTokens = normalizar(termoBusca).split(" ").filter(Boolean);
-  
-  // MENSAGEM EXIGIDA: Digite pelo menos dois nomes para realizar a pesquisa
+  const termoNorm = normalizar(termoBusca);
+  const termoTokens = termoNorm.split(" ").filter(Boolean);
+  const temDigito = /\d/.test(termoBusca);
+
+  // Busca por CPF (quando o termo contém dígitos)
+  if (temDigito) {
+    const digitos = termoBusca.replace(/\D/g, "");
+    if (digitos.length === 0) return [];
+    if (digitos.length < 3) {
+      return { erro: "cpf_curto", mensagem: "Digite pelo menos 3 dígitos do CPF para pesquisar." };
+    }
+
+    const resultados = [];
+    for (const registro of registros) {
+      const cpf = (registro.cpf || "").replace(/\D/g, "");
+      if (!cpf) continue;
+      // aceita substring ou alta similaridade
+      if (cpf.includes(digitos) || razaoSimilaridade(cpf, digitos) * 1 >= 90) {
+        resultados.push({ ...registro, placar: 100 });
+      }
+    }
+    return resultados;
+  }
+
+  // Busca por nome/título/detalhe (exige pelo menos dois tokens)
   if (termoTokens.length > 0 && termoTokens.length < 2) {
     return { erro: "min_nomes", mensagem: "Digite pelo menos dois nomes para realizar a pesquisa." };
   }
-
   if (termoTokens.length === 0) return [];
 
   const resultados = [];

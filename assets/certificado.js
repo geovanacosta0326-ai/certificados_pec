@@ -61,10 +61,41 @@ function montarPartesTexto(trilha, registro) {
   const detalhe = registro.detalhe ? ` na área de ${registro.detalhe}` : "";
 
   if (trilha === "avaliadores") {
+    // determina forma correta (Avaliador / Avaliadora) com base no campo 'genero'
+    const generoCampo = registro.genero ? String(registro.genero).trim().toLowerCase() : "";
+    // fallback: inferir a partir do primeiro nome se genero não informado
+    function inferirGeneroPorNome(nome) {
+      if (!nome) return "";
+      const primeiro = nome.split(" ")[0] || "";
+      const p = primeiro.normalize("NFKD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+      const femininos = new Set(["ana","maria","mariana","juliana","camila","gabriela","isabela","rafaela","daniela","fernanda","patricia","bianca","luiza","eduarda","laura"]);
+      const masculinos = new Set(["joao","joão","carlos","paulo","marcos","lucas","ricardo","bruno","felipe","gabriel","diego","eduardo","antonio","rafael","matheus","leonardo"]);
+      if (femininos.has(p)) return "f";
+      if (masculinos.has(p)) return "m";
+      if (p.endsWith("a")) return "f";
+      if (p.endsWith("o")) return "m";
+      return "";
+    }
+    let generoInf = generoCampo;
+    if (!generoInf) generoInf = inferirGeneroPorNome(nomes);
+    let papel = "Avaliador(a)";
+    if (generoInf && generoInf.startsWith("f")) papel = "Avaliadora";
+    else if (generoInf && generoInf.startsWith("m")) papel = "Avaliador";
+
+    // pluraliza se houver múltiplos nomes
+    let papelFinal = papel;
+    if (registro.nomes && registro.nomes.length > 1) {
+      if (papel.includes("(a)")) papelFinal = papel + "s"; // Avaliador(a)s
+      else if (papel.endsWith("or")) papelFinal = papel + "es"; // Avaliador -> Avaliadores
+      else papelFinal = papel + "s";
+    }
+
     return [
-      { t: `Certificamos que `, b: false },
+      { t: `Certificamos que`, b: false },
+      { quebra: 1.3 },
       { t: nomes, b: true },
-      { t: ` atuou(aram) como avaliador(a) dos trabalhos científicos${detalhe} apresentados no ${NOME_EVENTO}, realizado ${DATA_EVENTO}, no ${LOCAL_EVENTO}.`, b: false }
+      { quebra: 1.3 },
+      { t: `participou como ${papelFinal} da VII Mostra de Trabalhos Científicos, contribuindo para a avaliação técnico-científica dos trabalhos apresentados nos segmentos Agroindústria, Apicultura/Meliponicultura, Aquicultura e Pesca, Avicultura Caipira, Avicultura Industrial, Bovinocultura de Corte, Bovinocultura de Leite, Cajucultura, Caprinocultura, Equinocultura, Floricultura, Inovação Tecnológica, Meio Ambiente, Pet e Suinocultura, durante o ${NOME_EVENTO}, realizado ${DATA_EVENTO}, no ${LOCAL_EVENTO}.`, b: false }
     ];
   } else if (trilha === "missao-rosa") {
     const colocacao = registro.colocacao ? `${registro.colocacao} lugar` : "";
